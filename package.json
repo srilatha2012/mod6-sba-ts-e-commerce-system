@@ -1,0 +1,16 @@
+{
+  "name": "e-commerce-system",
+  "version": "1.0.0",
+  "description": "e-commerce project",
+  "license": "ISC",
+  "author": "srilatha puppala",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "typescript": "^6.0.2"
+  }
+}
