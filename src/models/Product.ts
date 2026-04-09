@@ -1,14 +1,16 @@
 export class Product {
     id: number;
     title: string;
+    category: string;
     price: number;
     discountPercentage: number;
     sku: string;
 
     //constructor to initialize product details
-    constructor(id: number, title: string, price: number, discountPercentage: number, sku: string) {
+    constructor(id: number, title: string, category: string ,price: number, discountPercentage: number, sku: string) {
         this.id = id;
         this.title = title;
+        this.category = category;
         this.price = price;
         this.discountPercentage = discountPercentage;
         this.sku = sku;
