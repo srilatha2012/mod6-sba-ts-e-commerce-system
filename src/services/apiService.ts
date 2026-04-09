@@ -4,7 +4,7 @@ import { DataError,NetworkError } from "../utils/errorHandler.js";
 const BASE_URL = "https://dummyjson.com/products";
 
 // Fetches all products from the DummyJSON API
-async function fetchProducts() {
+export async function fetchProducts() {
   try {
     const response = await fetch(BASE_URL);
 
@@ -42,7 +42,7 @@ async function fetchProducts() {
   }
 
 }
-async function showResult() {
+export async function getAllProducts() {
   const result = await fetchProducts();
   console.log("result", result);
 }

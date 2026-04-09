@@ -1,3 +1,4 @@
+import {calculateDiscount} from "../utils/discountCalculator.js"
 export class Product {
     id: number;
     title: string;
@@ -17,11 +18,12 @@ export class Product {
     }
     //Returns product details as a formatted string
     displayDetails(): string {
-        return `ID: ${this.id}, Title: ${this.title}, Price: ${this.price}, DiscountPercentage: ${this.discountPercentage}, SKU: ${this.sku} `;
+        return `ID: ${this.id}, Title: ${this.title}, Category: ${this.category}, Price: ${this.price}, DiscountPercentage: ${this.discountPercentage}, SKU: ${this.sku} `;
     }
     
     //Returna product price with discount
     getPriceWithDiscount(): number {
-      return this.price;
+        return this.price - calculateDiscount(this);
     }
+    
 }
